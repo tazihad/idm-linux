@@ -1,0 +1,16 @@
+#!/bin/bash
+IDMan_EXE_LOC=""
+
+if [ -f ~/.wine/drive_c/Program\ Files/Internet\ Download\ Manager/IDMan.exe ]; then
+    IDMan_EXE_LOC=~/.wine/drive_c/Program\ Files/Internet\ Download\ Manager/IDMan.exe
+elif [ -f ~/.wine/drive_c/Program\ Files\ \(x86\)/Internet\ Download\ Manager/IDMan.exe ]; then
+    IDMan_EXE_LOC=~/.wine/drive_c/Program\ Files\ \(x86\)/Internet\ Download\ Manager/IDMan.exe
+fi
+
+if  [[ $1 == '-d' ]]; then
+   "$IDMan_EXE_LOC" /d "$2"
+elif [[ $1 == *://* ]]; then    
+  "$IDMan_EXE_LOC" /d "$1"
+else
+  echo "Usage: idm [URL] or idm -d [URL]"
+fi
