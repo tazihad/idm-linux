@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+if  [[ $1 == '-d' ]]; then
+   WINEPREFIX="/home/pulsar/.local/share/wineprefixes/IDM" /usr/bin/wine C:\\windows\\command\\start.exe /Unix /home/pulsar/.local/share/wineprefixes/IDM/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Internet\ Download\ Manager/Internet\ Download\ Manager.lnk /d "$2"
+elif [[ $1 == *://* ]]; then    
+  WINEPREFIX="/home/pulsar/.local/share/wineprefixes/IDM" /usr/bin/wine C:\\windows\\command\\start.exe /Unix /home/pulsar/.local/share/wineprefixes/IDM/dosdevices/c:/ProgramData/Microsoft/Windows/Start\ Menu/Programs/Internet\ Download\ Manager/Internet\ Download\ Manager.lnk /d "$1"
+else
+  echo "Usage: idm [URL] or idm -d [URL]"
+fi 
+
+
