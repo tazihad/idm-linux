@@ -1,5 +1,6 @@
 # idm-linux
 Setup Internet Download Manager in Linux with Wine. Extension working.
+Working version: Internet Download Manager 6.36 Build 5
 
 step 1: Setup wine (on Archlinux)
 ```
