@@ -25,8 +25,9 @@ $ idm
 ```
 flatpak install flathub org.winehq.Wine
 ```
-Create a 32-Bit WINEPREFIX named "IDM".  
+Create a 32-Bit WINEPREFIX named "IDM" using flatpak winetricks.
 Install IDM in default location.  
+`flatpak run --command=winetricks org.winehq.Wine`
 
 put "idm-flatpak" as "idm" in ~/.local/share/bin/". Make it executable. Change username inside it.  
 put idm.png icon in ~/.local/share/icons
