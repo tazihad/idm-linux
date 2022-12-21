@@ -50,7 +50,7 @@ StartupWMClass=Internet Download Manager
 ```
 
 NOTE: Change IDM Directory, Home directory & Username as per your distribution.
-
+Make sure you have node installed in system. Or use NVM to install node in local.
 
 
 
