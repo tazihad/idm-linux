@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if  [[ $1 == '-d' ]]; then
+   flatpak run --env="WINEPREFIX=/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/" org.winehq.Wine "/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/drive_c/Program Files/Internet Download Manager/IDMan.exe" /d "$2"
+elif [[ $1 == *://* ]]; then
+  flatpak run --env="WINEPREFIX=/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/" org.winehq.Wine "/var/home/zihad/.var/app/org.winehq.Wine/data/wineprefixes/IDM/drive_c/Program Files/Internet Download Manager/IDMan.exe" /d "$1"
+else
+  echo "Usage: idm [URL] or idm -d [URL]"
+fi
+
+
