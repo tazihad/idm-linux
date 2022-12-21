@@ -46,6 +46,7 @@ Comment=Launch Internet Download Manager.
 StartupWMClass=Internet Download Manager
 ```
 
+NOTE: Change IDM Directory, Home directory & Username as per your distribution.
 
 
 
