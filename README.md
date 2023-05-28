@@ -1,4 +1,4 @@
-More information on:
+More information at:
 https://zihad.com.bd/posts/how-to-use-idm-in-linux-with-extension/
 
 # idm-linux
