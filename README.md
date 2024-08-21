@@ -56,4 +56,11 @@ NOTE: Change IDM Directory, Home directory & Username as per your distribution.
 Make sure you have node installed in system. Or use NVM to install node in local.
 
 
+### IDM FLATPAK BUILD
+I have created a flatpak for IDM. Try and use it.
+```
+curl -L -o idm.flatpak https://github.com/tazihad/flatpaks/releases/download/flatpak/idm.flatpak
+flatpak install --user org.winehq.Wine
+flatpak install --user ./idm.flatpak
+```
 
