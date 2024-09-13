@@ -60,7 +60,7 @@ Make sure you have node installed in system. Or use NVM to install node in local
 I have created a flatpak for IDM. Try and use it.
 ```
 curl -L -o idm.flatpak https://github.com/tazihad/flatpaks/releases/download/flatpak/idm.flatpak
-flatpak install --user org.winehq.Wine
+flatpak install --user app/org.winehq.Wine/x86_64/stable-23.08
 flatpak install --user ./idm.flatpak
 ```
 
