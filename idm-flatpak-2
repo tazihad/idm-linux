@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ $1 == '-d' ]]; then
+  flatpak run --branch=master --arch=x86_64 --command=idm com.internetdownloadmanager.idm /d "$2"
+elif [[ $1 == *://* ]]; then
+  flatpak run --branch=master --arch=x86_64 --command=idm com.internetdownloadmanager.idm /d "$1"
+else
+  echo "Usage: idm [URL] or idm -d [URL]"
+fi
