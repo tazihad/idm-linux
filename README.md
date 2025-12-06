@@ -5,6 +5,17 @@ https://zihad.com.bd/posts/how-to-use-idm-in-linux-with-extension/
 Setup Internet Download Manager in Linux with Wine. Extension working.
 Working version: Internet Download Manager 6.36 Build 5
 
+### EASY 
+
+⚡🚀 Quick Flatpak IDM Install 📥🔥
+```sh
+curl -L -o idm.flatpak https://github.com/tazihad/flatpaks/releases/download/wow64/idm.flatpak
+flatpak install flathub org.freedesktop.Platform//25.08
+flatpak install flathub org.winehq.Wine//wow64-25.08
+flatpak install --user ./idm.flatpak
+```
+
+### ADVANCED
 step 1: Setup wine (on Archlinux)
 ```
 $ sudo pacman -S wine wine-mono wine_gecko winetricks
